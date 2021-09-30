@@ -9,6 +9,11 @@
     Dark_Tangerine: d14949
     Yellow: f7c203
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
