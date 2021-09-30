@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Hiba Murali | About Me</title>
-    <link href="../img/gradient favicon.png" rel="shortcut icon">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="img/gradient favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,85 +14,97 @@
   <body>
     <!-- NavBar -->
     <header>
-        <div>
-          <img src="../img/logo-purple.svg" alt="Hiba">
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html">
+            <img src="img/logo-purple.svg" class="logo" alt="Hiba">
+          </a>
           <nav>
-            <ul>
-              <li><a href="../pages/work.html">Work</a></li>
-              <li><a href="../pages/about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="work.html" class="navlink">Work</a>
+            <a href="about.html" class="navlink">About</a>
+            <a href="#contact" class="button navbar">Contact</a>
           </nav>
         </div>
+      </div>
     </header>
-
+    <!-- NavBar End -->
     <!-- Page Content -->
     <main>
       <!-- Hero -->
-      <div>
-        <h1>Hiba Murali</h1>
-      </div>
 
       <!-- Photo -->
-      <div>
+      <div class="container">
         <picture>
-          <source srcset="../img/profile_pic_600.jpg" media="(max-width:767px)">
-          <img src="../img/profile_pic_1200.jpg" alt="A picture of me!">
+          <source srcset="img/profile_pic_600.jpg" media="(max-width:767px)">
+          <img src="img/profile_pic_1200.jpg" alt="A picture of me!">
         </picture>
       </div>
 
-      <div>
-        <h2>About Me</h2>
-        <p>
-          Hi, I’m Hiba -- a product designer with two degrees in computer
-          engineering, and experience as a product manager. As someone who has
-          always been in the tech industry, my multidisciplinary background
-          makes it incredibly easy for me to wear multiple hats. This makes me
-          an excellent fit at startups and small businesses that need to move
-          fast, iterate on products, and ship results with small teams and
-          little resources. I’m looking for a dynamic, highly collaborative
-          team where I can solve customer problems creatively and effectively
-          through product design.
-        </p>
-        <a href="../files/Hiba Murali - Product Designer.pdf" target="_blank">
-          View my resume
-        </a>
+      <div class="container">
+        <h1>Hiba Murali</h1>
       </div>
 
-      <div>
-        <h2>Skills & Tools</h2>
+      <div class="container">
+        <div class="content_wrapper">
+          <div id="aboutme">
+            <h2>About Me</h2>
+            <p>
+              Hi, I’m Hiba -- a product designer with two degrees in computer
+              engineering, and experience as a product manager. As someone who has
+              always been in the tech industry, my multidisciplinary background
+              makes it incredibly easy for me to wear multiple hats. This makes me
+              an excellent fit at startups and small businesses that need to move
+              fast, iterate on products, and ship results with small teams and
+              little resources. I’m looking for a dynamic, highly collaborative
+              team where I can solve customer problems creatively and effectively
+              through product design.
+            </p>
+            <a href="files/Hiba Murali - Product Designer.pdf"
+               class="button"
+               target="_blank">
+              View my resume
+            </a>
+          </div>
 
-        <h3>Design</h3>
-        <p>Low- to high-fidelity wireframing and prototyping, user interviews,
-          usability studies, surveys
-        </p>
+          <div id="skills">
+            <h2>Skills & Tools</h2>
 
-        <h3>Programming</h3>
-        <p>HTML, CSS, JavaScript, React.js, Tailwind CSS, Python, MATLAB, C/C++</p>
+            <h3>Design</h3>
+            <p>Low- to high-fidelity wireframing and prototyping, user interviews,
+              usability studies, surveys
+            </p>
 
-        <h3>Product</h3>
-        <p>Agile methodologies, Scrum, user stories, product requirements,
-          customer discovery, data analysis, data-driven decision-making
-        </p>
+            <h3>Programming</h3>
+            <p>HTML, CSS, JavaScript, React.js, Tailwind CSS, Python, MATLAB, C/C++</p>
 
-        <h3>Tools</h3>
-        <p>Figma, Marvel, Anaconda, Jupyter Notebooks, Asana, Trello, Slack,
-          Confluence, Jira, Microsoft Office, Linux
-        </p>
+            <h3>Product</h3>
+            <p>Agile methodologies, Scrum, user stories, product requirements,
+              customer discovery, data analysis, data-driven decision-making
+            </p>
+
+            <h3>Tools</h3>
+            <p>Figma, Marvel, Anaconda, Jupyter Notebooks, Asana, Trello, Slack,
+              Confluence, Jira, Microsoft Office, Linux
+            </p>
+          </div>
+        </div>
       </div>
 
     </main>  <!-- End Page Content -->
 
     <footer id="contact">
-        <div>
-          <h2>Interested in collaborating?</h2>
+        <div class="container">
+          <h2 class="h2-footer">Interested in collaborating?</h2>
           <p>Reach out to me any time!</p>
-          <div>
-            <a href="https://www.hibamurali.com/contact">Contact Me</a>
+          <div class="CTA">
+            <a href="https://www.hibamurali.com/contact"
+               class="button contact">
+               Contact Me
+            </a>
           </div>
-          <div> <!-- Social Media -->
+          <div class="social-media"> <!-- Social Media -->
             <a href="https://www.linkedin.com/in/hibamurali/" target="_blank">
-              <img src="../img/linkedin.svg" width="32px" height="32px">
+              <img src="img/linkedin.svg" class="social" width="32px" height="32px">
             </a>
           </div>
           <p>Copyright Hiba Murali 2021. All rights reserved.</p>

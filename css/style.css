@@ -15,7 +15,7 @@ body {
   color: #13061a;
 }
 
-/* SECTIONS */
+/* =============================== SECTIONS ================================= */
 div {
 }
 .container {
@@ -28,17 +28,65 @@ div {
 .colored {
   background-color: #fcf6ff;
 }
+.CTA {
+  display: inline-flex;
+}
+.social-media {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+.content_wrapper {
+  display: flex;
+}
+.cards_wrapper {
+  display: flex;
+  margin-left: -1em;
+  margin-right: -1em;
+}
 
+/* ------------ NavBar -------------*/
+nav {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ------------ Footer -------------*/
 footer {
   background-color: #f7c203;
 }
 
-/* TYPOGRAPHY */
+/* ------------ Cards --------------*/
+.card.case-study {
+  padding: 1.5em;
+  margin-bottom: 2em;
+  border-radius: 2em;
+  box-shadow: 4px 4px 20px 0 rgb(0 0 0 / 10%);
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#aboutme {
+  flex: 1;
+  margin-right: 1.5em;
+}
+#skills {
+  flex: 1;
+  margin-left: 1.5em;
+}
+
+
+/* ============================== TYPOGRAPHY ================================ */
 h1 {
   font-size: 3em;
   font-weight: bold;
   line-height: normal;
   color: #4d1766;
+  margin: 0;
 }
 
 h2 {
@@ -46,6 +94,9 @@ h2 {
   font-weight: bold;
   line-height: normal;
   color: #8729b3;
+}
+.h2-footer {
+  color: #13061a;
 }
 
 h3 {
@@ -58,6 +109,16 @@ h3 {
   border-left: solid;
   border-color: #d14949;
   border-width: thick;
+}
+.card-title {
+  color: #ff5757;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: transparent;
+  border-left: solid;
+  border-color: transparent;
+  padding: 0;
 }
 
 h4 {
@@ -76,9 +137,18 @@ p {
 img {
   width: 100%;
 }
-
-
-/* LINKS */
+.social {
+  width: auto;
+}
+.logo {
+  position: relative;
+  float: left;
+  left: 0%;
+  top: 8px;
+  right: auto;
+  bottom:0%;
+}
+/* ================================= LINKS ================================== */
 a {
   color: #ff5757;
   text-decoration: none;
@@ -88,28 +158,51 @@ a:focus {
   color: #d14949;
   text-decoration: underline;
 }
-
-.button {
-  display: inline-block;
-  background-color: #ff7f50;
-  color: #ffffff;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
+.navlink {
+    padding: 0.75em;
+    color: #8729b3;
 }
-.button:hover {
-  opacity: 0.8;
+.navlink:hover {
+  color: #ff5757;
   text-decoration: none;
 }
+
+.button { /*  box-shadow: 2px solid #ff7f50;*/
+  background-color: #ff5757;
+  color: #ffffff;
+  padding: 0.75em;
+  border-radius: 5em;
+  border-style: solid;
+  border-color: transparent;
+}
+.button:hover {
+  background-color: #d14949;
+  color: #ffffff;
+  border-radius: 5em;
+  border-style: solid;
+  border-color: transparent;
+  text-decoration: none;
+  padding: 0.75em;
+}
+
 .button.contact {
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  background-color: #ffffff;
+  color: #13061a;
 }
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: #fff4f4;
+  color: #13061a;
+  text-decoration: none;
+}
+
+.button.navbar {
+  background-color: #8729b3;
   color: #ffffff;
+  margin-left: 0.75em;
+}
+.button.navbar:hover {
+  background-color: #ff5757;
+  color: #ffffff;
+  margin-left: 0.75em;
+  text-decoration: none;
 }
