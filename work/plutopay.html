@@ -14,17 +14,20 @@
   <body>
     <!-- NavBar -->
     <header>
-        <div>
-          <img src="../img/logo-purple.svg" alt="Hiba">
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html">
+            <img src="../img/logo-purple.svg" class="logo" alt="Hiba">
+          </a>
           <nav>
-            <ul>
-              <li><a href="../pages/work.html">Work</a></li>
-              <li><a href="../pages/about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="work.html" class="navlink">Work</a>
+            <a href="about.html" class="navlink">About</a>
+            <a href="#contact" class="button navbar">Contact</a>
           </nav>
         </div>
+      </div>
     </header>
+    <!-- NavBar End -->
 
     <!-- Page Content -->
     <main>
@@ -699,14 +702,17 @@
 
     <footer id="contact">
         <div class="container">
-          <h2>Interested in collaborating?</h2>
+          <h2 class="h2-footer">Interested in collaborating?</h2>
           <p>Reach out to me any time!</p>
-          <div>
-            <a href="https://www.hibamurali.com/contact">Contact Me</a>
+          <div class="CTA">
+            <a href="https://www.hibamurali.com/contact"
+               class="button contact">
+               Contact Me
+            </a>
           </div>
-          <div> <!-- Social Media -->
+          <div class="social-media"> <!-- Social Media -->
             <a href="https://www.linkedin.com/in/hibamurali/" target="_blank">
-              <img src="../img/linkedin.svg" width="32px" height="32px">
+              <img src="img/linkedin.svg" class="social" width="32px" height="32px">
             </a>
           </div>
           <p>Copyright Hiba Murali 2021. All rights reserved.</p>
