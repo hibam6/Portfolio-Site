@@ -14,14 +14,14 @@
   <body>
     <!-- NavBar -->
     <header>
-      <div class="container">
+      <div class="container" style="padding:0">
         <div class="navbar">
-          <a href="index.html">
+          <a href="../index.html">
             <img src="../img/logo-purple.svg" class="logo" alt="Hiba">
           </a>
           <nav>
-            <a href="work.html" class="navlink">Work</a>
-            <a href="about.html" class="navlink">About</a>
+            <a href="../work.html" class="navlink">Work</a>
+            <a href="../about.html" class="navlink">About</a>
             <a href="#contact" class="button navbar">Contact</a>
           </nav>
         </div>
@@ -31,12 +31,22 @@
 
     <!-- Page Content -->
     <main>
+      <!-- Hero -->
+      <div style="margin:0">
+        <picture>
+          <source srcset="../img/plutopay/600px/PlutoPay_cover_600.png" media="(max-width:767px)">
+          <img src="../img/plutopay/1200px/PlutoPay_cover_1200.png" alt="Screenshots of PlutoPay's mobile app.">
+        </picture>
+      </div>
       <div>
-        <h1>PlutoPay</h1>
-        <h2>a new solution for easy online transactions<h2>
+        <div class="container">
+          <h1 class="title">PlutoPay</h1>
+          <h2 class="subtitle">a new solution for easy online transactions<h2>
+        </div>
       </div>
 
       <div class="colored">
+        <div class="container">
         <h1>OVERVIEW</h1>
         <h2>Objective</h2>
         <p>Allow anyone to shop, transfer money, and more without a debit or
@@ -55,10 +65,11 @@
           enabling users to complete easy electronic funds transfers. The app
           also allows users to review their transaction history, add contacts to
           transfer money to or from, and set up savings goals.</p>
+        </div>
       </div>
 
-      <div>
-        <h1>DESIGN PROCESS</h1>
+      <div class="container">
+        <h1 style="color:#ff5757">DESIGN PROCESS</h1>
         <p>My design process is cyclical and iterative. At a high level, it's
           split into four phases: research, design, testing, and finalization.
           Here's a process diagram; note that the Test phase and Design phase
@@ -82,7 +93,7 @@
           CareerFoundry UX Immersion Course.</p>
       </div>
 
-      <div>
+      <div class="container">
         <h1>IDENTIFYING THE PROBLEM SPACE</h1>
         <p>My first step was to identify areas that users may struggle with. I thought about experiences my friends and I have had with online payments and transactions, and used that to compile problem ideas:
           </p>
@@ -107,237 +118,240 @@
       </div>
 
       <div class="colored">
-        <h1>RESEARCH</h1>
-        <h2>Competitive Analysis</h2>
-        <p>Before diving in and defining a solution, I wanted to better understand existing products that served this market. Online payments have been in use for several years, and money transfer apps have also been increasing in popularity as more and more people need to send money to or receive money from friends and family, and even businesses.</p>
-        <p>My focus while analyzing competitors was to answer this question:</p>
+        <div class="container">
+          <h1>RESEARCH</h1>
+          <h2>Competitive Analysis</h2>
+          <p>Before diving in and defining a solution, I wanted to better understand existing products that served this market. Online payments have been in use for several years, and money transfer apps have also been increasing in popularity as more and more people need to send money to or receive money from friends and family, and even businesses.</p>
+          <p>My focus while analyzing competitors was to answer this question:</p>
 
-        <h3>How can PlutoPay differentiate itself from solutions already on the market, and what are those solutions missing vs. doing well?</h3>
-        <p>I wanted to be thorough and gain a clear understanding of existing solutions and the niches they serve, so I investigated seven products: Venmo, PayPal, CashApp, Apple Pay, Google Pay, WeChat Pay, and Privacy.com.</p>
+          <h3>How can PlutoPay differentiate itself from solutions already on the market, and what are those solutions missing vs. doing well?</h3>
+          <p>I wanted to be thorough and gain a clear understanding of existing solutions and the niches they serve, so I investigated seven products: Venmo, PayPal, CashApp, Apple Pay, Google Pay, WeChat Pay, and Privacy.com.</p>
 
-        <p>Within this group, Venmo, PayPal, and CashApp primarily focused on the individual-to-individual transfer market, but included various other features such as cryptocurrency and investing support. Apple Pay, Google Pay, and WeChat Pay targeted the individual-to-business side of the spectrum, with Apple Pay also offering users their own credit card (which Venmo also has). Privacy.com also targets the individual-to-business market, but in a different way; this service allows users to create multiple digital debit or credit cards, which they can assign to a specific shopping site, in order to prevent payment platforms and merchants from selling user purchasing data to third parties. A summary of key points for each of these competing products is provided here:</p>
+          <p>Within this group, Venmo, PayPal, and CashApp primarily focused on the individual-to-individual transfer market, but included various other features such as cryptocurrency and investing support. Apple Pay, Google Pay, and WeChat Pay targeted the individual-to-business side of the spectrum, with Apple Pay also offering users their own credit card (which Venmo also has). Privacy.com also targets the individual-to-business market, but in a different way; this service allows users to create multiple digital debit or credit cards, which they can assign to a specific shopping site, in order to prevent payment platforms and merchants from selling user purchasing data to third parties. A summary of key points for each of these competing products is provided here:</p>
 
-        <picture>
-          <source srcset="../img/plutopay/600px/PlutoPay - Competitor Summary.png" media="(max-width:767px)">
-          <img src="../img/plutopay/1200px/PlutoPay - Competitor Summary.png" alt="Key points from competitive analysis">
-        </picture>
+          <picture>
+            <source srcset="../img/plutopay/600px/PlutoPay - Competitor Summary.png" media="(max-width:767px)">
+            <img src="../img/plutopay/1200px/PlutoPay - Competitor Summary.png" alt="Key points from competitive analysis">
+          </picture>
 
-        <p>
-          Since all of these competing platforms could be categorized into one
-          of two groups as defined earlier, I selected two of these products to
-          do a deep-dive on: PayPal (representative of the individual-to-
-          individual segment) and Apple Pay (representative of the individual-to
-          -business segment). This deep-dive included a review of the products'
-          key objectives and market advantage, as well as a SWOT analysis and
-          full UX profile.
-        </p>
+          <p>
+            Since all of these competing platforms could be categorized into one
+            of two groups as defined earlier, I selected two of these products to
+            do a deep-dive on: PayPal (representative of the individual-to-
+            individual segment) and Apple Pay (representative of the individual-to
+            -business segment). This deep-dive included a review of the products'
+            key objectives and market advantage, as well as a SWOT analysis and
+            full UX profile.
+          </p>
 
-        <p>
-          Once I had a clear understanding of the existing products in the
-          electronic financial transfer market, I was able to summarize my
-          findings into four key findings relating to business impacts for
-          PlutoPay:
-        </p>
+          <p>
+            Once I had a clear understanding of the existing products in the
+            electronic financial transfer market, I was able to summarize my
+            findings into four key findings relating to business impacts for
+            PlutoPay:
+          </p>
 
-        <ul>
-          <li>
-            <span>Target Audience <br/>
-            Younger, tech-savvy users like college students or young professionals
-            are a good customer base for early testing.</span>
-          </li>
-          <li>
-            <span>Competition<br/>
-              Popular products that provide digital wallet & online funds transfer
-              services.</span>
-          </li>
-          <li>
-            <span>Risks<br/>
-              Major competitors are tech giants with significant resources and
-              marketing reach.</span>
-          </li>
-          <li>
-            <span>Opportunities<br/>
-              It's possible to capitalize on features that existing solutions lack
-              or are weak in, like cryptocurrency trading and privacy.</span>
-          </li>
-        </ul>
-        <p>Given this, I wanted to learn more about prospective users' thoughts
-          on investing, cryptocurrency, and data privacy, and also whether users
-          felt that these existing problems had any major flaws that may present
-          an opportunity for PlutoPay. I worked these topics into my user
-          interview questionnaire, and then solicited help from my personal
-          network to find participants.</p>
+          <ul>
+            <li>
+              <span>Target Audience <br/>
+              Younger, tech-savvy users like college students or young professionals
+              are a good customer base for early testing.</span>
+            </li>
+            <li>
+              <span>Competition<br/>
+                Popular products that provide digital wallet & online funds transfer
+                services.</span>
+            </li>
+            <li>
+              <span>Risks<br/>
+                Major competitors are tech giants with significant resources and
+                marketing reach.</span>
+            </li>
+            <li>
+              <span>Opportunities<br/>
+                It's possible to capitalize on features that existing solutions lack
+                or are weak in, like cryptocurrency trading and privacy.</span>
+            </li>
+          </ul>
+          <p>Given this, I wanted to learn more about prospective users' thoughts
+            on investing, cryptocurrency, and data privacy, and also whether users
+            felt that these existing problems had any major flaws that may present
+            an opportunity for PlutoPay. I worked these topics into my user
+            interview questionnaire, and then solicited help from my personal
+            network to find participants.</p>
 
-        <h2>User Interviews</h2>
-        <p>
-          I was able to conduct user interviews with three participants, which
-          helped me gain a better understanding of user needs and previous
-          experience with financial service products. All interviews were
-          conducted virtually, over Zoom. My goals for these interviews was to
-          determine the prior experience and comfort level that users might have
-          with online financial transactions, what pain points they ran into in
-          this area, and to explore user interest in additional features such as
-          investing and cryptocurrency, as mentioned earlier. The core takeaways
-          from the interviews are presented below:
-        </p>
+          <h2>User Interviews</h2>
+          <p>
+            I was able to conduct user interviews with three participants, which
+            helped me gain a better understanding of user needs and previous
+            experience with financial service products. All interviews were
+            conducted virtually, over Zoom. My goals for these interviews was to
+            determine the prior experience and comfort level that users might have
+            with online financial transactions, what pain points they ran into in
+            this area, and to explore user interest in additional features such as
+            investing and cryptocurrency, as mentioned earlier. The core takeaways
+            from the interviews are presented below:
+          </p>
 
-        <ul>
-          <li>
-            <span>Competitor Usage<br/>
-              Venmo is easy to use and serves its purpose of allowing users to
-              send money to friends and family. Interviewees who have used
-              Venmo commented that it would be hard to improve on the product.
-              Interviewees also thought highly of PayPal, but mentioned that
-              there are features that are platform dependent (e.g. certain
-              functions can only be done on a desktop, not mobile devices).</span>
-          </li>
-          <li>
-            <span>Privacy & Security<br/>
-              All respondents agreed that they tend to base their trust level
-              of a financial service on the reputation of the company providing
-              the service. If there is a reputable brand name associated with
-              the service, they are more likely to trust it. Users do not look
-              for specific security or privacy protocols in financial apps.</span>
-          </li>
-          <li>
-            <span>Cryptocurrency<br/>
-              Two out of three respondents were unfamiliar with cryptocurrency
-              and as a result, did not feel comfortable using it to pay for
-              goods or services. The third interviewee has actively traded and
-              mined cryptocurrency in the past, but pointed out that it would
-              be difficult for mainstream users to access cryptocurrency in a
-              way that maintained their privacy.</span>
-          </li>
-          <li>
-            <span>Overall Experience<br/>
-              No interviewees had major problems with the current solutions
-              they use for exchanging money with friends and family. Two of
-              them said Venmo and CashApp do a good job of filling that niche,
-              while the third said the same for her bank’s app. However, two
-              users did mention having frustration around data entry,
-              remembering passwords, and making new accounts on new sites for
-              purchases.</span>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <span>Competitor Usage<br/>
+                Venmo is easy to use and serves its purpose of allowing users to
+                send money to friends and family. Interviewees who have used
+                Venmo commented that it would be hard to improve on the product.
+                Interviewees also thought highly of PayPal, but mentioned that
+                there are features that are platform dependent (e.g. certain
+                functions can only be done on a desktop, not mobile devices).</span>
+            </li>
+            <li>
+              <span>Privacy & Security<br/>
+                All respondents agreed that they tend to base their trust level
+                of a financial service on the reputation of the company providing
+                the service. If there is a reputable brand name associated with
+                the service, they are more likely to trust it. Users do not look
+                for specific security or privacy protocols in financial apps.</span>
+            </li>
+            <li>
+              <span>Cryptocurrency<br/>
+                Two out of three respondents were unfamiliar with cryptocurrency
+                and as a result, did not feel comfortable using it to pay for
+                goods or services. The third interviewee has actively traded and
+                mined cryptocurrency in the past, but pointed out that it would
+                be difficult for mainstream users to access cryptocurrency in a
+                way that maintained their privacy.</span>
+            </li>
+            <li>
+              <span>Overall Experience<br/>
+                No interviewees had major problems with the current solutions
+                they use for exchanging money with friends and family. Two of
+                them said Venmo and CashApp do a good job of filling that niche,
+                while the third said the same for her bank’s app. However, two
+                users did mention having frustration around data entry,
+                remembering passwords, and making new accounts on new sites for
+                purchases.</span>
+            </li>
+          </ul>
 
-        <p>
-          To draw out further insights from the feedback I got from the user
-          interviews, I reviewed my notes and used affinity mapping to condense
-          key points. Through this process, I identified several main themes
-          that connected participants' sentiments from the user interviews:
-        </p>
+          <p>
+            To draw out further insights from the feedback I got from the user
+            interviews, I reviewed my notes and used affinity mapping to condense
+            key points. Through this process, I identified several main themes
+            that connected participants' sentiments from the user interviews:
+          </p>
 
-        <ul>
-          <li>
-            <p>
-              Users do not have major problems with existing solutions and think
-              it would be difficult to greatly improve the current experience
-              provided by competitors.
-            </p>
-          </li>
-          <li>
-            <p>
-              Users feel online shopping is more convenient than in-person
-              shopping, and tend to shop online frequently. This behavior
-              increased significantly during the COVID-19 pandemic as well.
-            </p>
-          </li>
-          <li>
-            <p>
-              Users want all app features to have cross-platform support for
-              flexibility and ease of use.
-            </p>
-          </li>
-          <li>
-            <p>
-              Data entry when shopping online is a big pain point; users want a
-              standardized, cross-platform, one-click solution for online
-              shopping.
-            </p>
-          </li>
-          <li>
-            <p>
-              Users are concerned about sharing sensitive personal information,
-              such as banking details, with a relatively unknown service like
-              PlutoPay.
-            </p>
-          </li>
-          <li>
-            <p>
-              Although users are concerned about their data being shared to
-              third parties without their consent or getting leaked in security
-              breaches, they do not look for any specific privacy or security
-              features and instead rely on brand recognition and popularity as
-              measures of trustworthiness.
-            </p>
-          </li>
-          <li>
-            <p>
-              Users do not have much experience with cryptocurrency or investing,
-              and aren't interested in having those features available because
-              of a steeper learning curve and higher barrier to entry.
-            </p>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <p>
+                Users do not have major problems with existing solutions and think
+                it would be difficult to greatly improve the current experience
+                provided by competitors.
+              </p>
+            </li>
+            <li>
+              <p>
+                Users feel online shopping is more convenient than in-person
+                shopping, and tend to shop online frequently. This behavior
+                increased significantly during the COVID-19 pandemic as well.
+              </p>
+            </li>
+            <li>
+              <p>
+                Users want all app features to have cross-platform support for
+                flexibility and ease of use.
+              </p>
+            </li>
+            <li>
+              <p>
+                Data entry when shopping online is a big pain point; users want a
+                standardized, cross-platform, one-click solution for online
+                shopping.
+              </p>
+            </li>
+            <li>
+              <p>
+                Users are concerned about sharing sensitive personal information,
+                such as banking details, with a relatively unknown service like
+                PlutoPay.
+              </p>
+            </li>
+            <li>
+              <p>
+                Although users are concerned about their data being shared to
+                third parties without their consent or getting leaked in security
+                breaches, they do not look for any specific privacy or security
+                features and instead rely on brand recognition and popularity as
+                measures of trustworthiness.
+              </p>
+            </li>
+            <li>
+              <p>
+                Users do not have much experience with cryptocurrency or investing,
+                and aren't interested in having those features available because
+                of a steeper learning curve and higher barrier to entry.
+              </p>
+            </li>
+          </ul>
 
-        <h2>Synthesis and Direction</h2>
-        <p>
-          Based on customer interviews, it seemed that there was little interest
-          in using the app to trade stocks or cryptocurrencies, and that users
-          were satisfied overall with the solutions they were currently using.
-          The biggest pain point for almost all of the participants was having
-          to do data entry whenever they complete an online purchase (e.g.
-          re-typing card information, emails, etc.) and not having cross-platform
-          support for this need across multiple devices. I thought this was a
-          novel use case, and became interested in finding a solution to this
-          problem, as it seemed to be a promising direction for PlutoPay.
-          However, the solution that was most likely to be most effective was a
-          browser extension -- not a responsive web app -- and so that idea was
-          out of scope for this project, as per the brief.
-        </p>
-        <p>
-          Combining requirements from the brief with my research, I created a more
-          comprehensive list of features to include in PlutoPay that would satisfy
-          the brief. Then I wrote user stories describing how users would want to
-          interact with the product and why the feature would help them. This left
-          me with 30+ user stories, some of which were epics and needed to be broken
-          down further. Here are some samples from that list:
-        </p>
-        <h3>
-          As a PlutoPay novice just setting up my account, I want to see
-          introductory information about the app, so that I have a better
-          understanding of how to get started using it.
-        <br/>
-        <br/>
-          As a goal-oriented user, I want to know how well I am doing in meeting
-          my financial goals when I open the app, so that I can plan my expenses
-          accordingly.
-        <br/>
-        <br/>
-          As a security-conscious user, I want to verify my identity and the
-          identity of the other party involved in a transaction when I send or
-          receive money, so that I make sure that funds are moving to the right
-          individual or business.
-        </h3>
+          <h2>Synthesis and Direction</h2>
+          <p>
+            Based on customer interviews, it seemed that there was little interest
+            in using the app to trade stocks or cryptocurrencies, and that users
+            were satisfied overall with the solutions they were currently using.
+            The biggest pain point for almost all of the participants was having
+            to do data entry whenever they complete an online purchase (e.g.
+            re-typing card information, emails, etc.) and not having cross-platform
+            support for this need across multiple devices. I thought this was a
+            novel use case, and became interested in finding a solution to this
+            problem, as it seemed to be a promising direction for PlutoPay.
+            However, the solution that was most likely to be most effective was a
+            browser extension -- not a responsive web app -- and so that idea was
+            out of scope for this project, as per the brief.
+          </p>
+          <p>
+            Combining requirements from the brief with my research, I created a more
+            comprehensive list of features to include in PlutoPay that would satisfy
+            the brief. Then I wrote user stories describing how users would want to
+            interact with the product and why the feature would help them. This left
+            me with 30+ user stories, some of which were epics and needed to be broken
+            down further. Here are some samples from that list:
+          </p>
+          <h3>
+            As a PlutoPay novice just setting up my account, I want to see
+            introductory information about the app, so that I have a better
+            understanding of how to get started using it.
+          <br/>
+          <br/>
+            As a goal-oriented user, I want to know how well I am doing in meeting
+            my financial goals when I open the app, so that I can plan my expenses
+            accordingly.
+          <br/>
+          <br/>
+            As a security-conscious user, I want to verify my identity and the
+            identity of the other party involved in a transaction when I send or
+            receive money, so that I make sure that funds are moving to the right
+            individual or business.
+          </h3>
 
-        <h2>Persona Development</h2>
-        <p>
-          Armed with copious amounts of background information from user
-          interviews and my competitive analysis, I then created a primary
-          persona for PlutoPay, "Claire". Claire is a university student in a
-          mid-sized city, who frequently needs to send money to or request money
-          from friends. She feels frustrated when she has to chase friends who
-          owe her money down, and wants to be able to keep a record of payments
-          she sent and received so that she can keep tabs on who she owes vs.
-          who owes her. However, she is reluctant to share her data with apps
-          she doesn't trust.
-        </p>
-        <picture>
-          <source srcset="../img/plutopay/600px/PlutoPay - Persona - Claire.png" media="(max-width:767px)">
-          <img src="../img/plutopay/1200px/PlutoPay - Persona - Claire.png" alt="Summary of the persona, Claire">
-        </picture>
+          <h2>Persona Development</h2>
+          <p>
+            Armed with copious amounts of background information from user
+            interviews and my competitive analysis, I then created a primary
+            persona for PlutoPay, "Claire". Claire is a university student in a
+            mid-sized city, who frequently needs to send money to or request money
+            from friends. She feels frustrated when she has to chase friends who
+            owe her money down, and wants to be able to keep a record of payments
+            she sent and received so that she can keep tabs on who she owes vs.
+            who owes her. However, she is reluctant to share her data with apps
+            she doesn't trust.
+          </p>
+          <picture>
+            <source srcset="../img/plutopay/600px/PlutoPay - Persona - Claire.png" media="(max-width:767px)">
+            <img src="../img/plutopay/1200px/PlutoPay - Persona - Claire.png" alt="Summary of the persona, Claire">
+          </picture>
+        </div>
       </div>
-      <div>
+
+      <div class="container">
         <h1>DESIGN</h1>
         <h2>Task Flows</h2>
         <p>
@@ -394,28 +408,28 @@
           PlutoPay would eventually function when live, and to define details
           like spacing & position before going into high-fidelity wireframes.
         </p>
-        <div>
-          <picture>
+        <div class="image-grid">
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Mid-Fi Contacts.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Mid-Fi Contacts.png" alt="Mid-fidelity wireframe of the contacts page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Mid-Fi Goals.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Mid-Fi Goals.png" alt="Mid-fidelity wireframe of the goals page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Mid-Fi History.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Mid-Fi History.png" alt="Mid-fidelity wireframe of the history page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Mid-Fi Home.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Mid-Fi Home.png" alt="Mid-fidelity wireframe of the home page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Mid-Fi New Transfer.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Mid-Fi New Transfer.png" alt="Mid-fidelity wireframe of the transfer page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Mid-Fi Sign Up.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Mid-Fi Sign Up.png" alt="Mid-fidelity wireframe of the sign up page">
           </picture>
@@ -423,119 +437,127 @@
       </div>
 
       <div class="colored">
-        <h1>TEST</h1>
-        <h2>Usability Studies</h2>
-        <p>
-          At this point, I could finally test the interactive prototype with real
-          users. My goals for the usability testing phase were (1) to better
-          understand user interactions with the app and (2) to assess where the
-          design was confusing or non-functional. I interviewed six participants
-          over Zoom, and recorded the sessions. During the usability test, I
-          provided five direct tasks, and asked users to rank the difficulty of each
-          one after completion. I also collected their general feedback about the
-          app and the tasks as they proceeded through the test.
-        </p>
-        <p>
-          Most calls went smoothly, except for the last one; the participant had
-          internet issues that caused their audio to fade in and out frequently.
-          This made collecting data a bit difficult for the last session, as I
-          also had to screenshare the prototype and have them tell me what to
-          click on, rather than them being able to directly interact with the
-          prototype by themselves. Although the situation was technically
-          challenging compared to the other interviews, changing the format
-          allowed it to proceed well enough, but not ideally.
-        </p>
-        <p>
-          In terms of insights, most participants struggled with the task to
-          select multiple contacts in the contact menu, so I determined that
-          task flow in the prototype needed work to improve intuitiveness. Some
-          participants also questioned the need for collecting email addresses
-          for contacts, saying that they were unlikely to know this information
-          for their friends. The top three key usability problems from this
-          exercise are presented below, in order from highest to lowest
-          priority, along with my plan for fixing each issue.
-        </p>
-        <div>
-          <div>
-            <h2>Trouble multi-selecting contacts</h2>
-            <h3>High Priority</h3>
-            <h4>The Problem</h4>
-            <p>
-              83% of participants had trouble finding how to select multiple
-              contacts at a time. While some commented that the functionality was
-              intuitive, they had caveats that a user would need to know the
-              feature existed first before they could actually find and use it.
-            </p>
-            <h4>The Solution</h4>
-            <p>
-              ‍Include more visual cues that the multi-select feature exists.
-            </p>
-            <p>
-              (Note that users can't press and hold a mobile prototype on desktop,
-              despite that being the user's instinct, which caused some problems
-              in testing)
-            </p>
+        <div class="container">
+          <h1>TEST</h1>
+          <h2>Usability Studies</h2>
+          <p>
+            At this point, I could finally test the interactive prototype with real
+            users. My goals for the usability testing phase were (1) to better
+            understand user interactions with the app and (2) to assess where the
+            design was confusing or non-functional. I interviewed six participants
+            over Zoom, and recorded the sessions. During the usability test, I
+            provided five direct tasks, and asked users to rank the difficulty of each
+            one after completion. I also collected their general feedback about the
+            app and the tasks as they proceeded through the test.
+          </p>
+          <p>
+            Most calls went smoothly, except for the last one; the participant had
+            internet issues that caused their audio to fade in and out frequently.
+            This made collecting data a bit difficult for the last session, as I
+            also had to screenshare the prototype and have them tell me what to
+            click on, rather than them being able to directly interact with the
+            prototype by themselves. Although the situation was technically
+            challenging compared to the other interviews, changing the format
+            allowed it to proceed well enough, but not ideally.
+          </p>
+          <p>
+            In terms of insights, most participants struggled with the task to
+            select multiple contacts in the contact menu, so I determined that
+            task flow in the prototype needed work to improve intuitiveness. Some
+            participants also questioned the need for collecting email addresses
+            for contacts, saying that they were unlikely to know this information
+            for their friends. The top three key usability problems from this
+            exercise are presented below, in order from highest to lowest
+            priority, along with my plan for fixing each issue.
+          </p>
+          <div class="card content-highlight">
+            <div style="flex:3; margin-right:2em;">
+              <h2 class="card-title alt" style="font-size:2.25em;">
+                Trouble multi-selecting contacts
+              </h2>
+              <h3 class="card-title alt" style="">
+                High Priority
+              </h3>
+              <h3 class="card-title">The Problem</h3>
+              <p class="p card">
+                83% of participants had trouble finding how to select multiple
+                contacts at a time. While some commented that the functionality was
+                intuitive, they had caveats that a user would need to know the
+                feature existed first before they could actually find and use it.
+              </p>
+              <h3 class="card-title">The Solution</h3>
+              <p class="p card">
+                ‍Include more visual cues that the multi-select feature exists.
+              </p>
+              <p class="p card">
+                (Note that users can't press and hold a mobile prototype on desktop,
+                despite that being the user's instinct, which caused some problems
+                in testing)
+              </p>
+            </div>
+            <div class="wireframe" style="flex:1.5">
+              <picture>
+                <source srcset="../img/plutopay/600px/PlutoPay - TEST - contacts-multi-select.png" media="(max-width:767px)">
+                <img src="../img/plutopay/1200px/PlutoPay - TEST - contacts-multi-select.png" alt="Screen showing old version of multi-select feature">
+              </picture>
+            </div>
           </div>
-          <div>
-            <picture>
-              <source srcset="../img/plutopay/600px/PlutoPay - TEST - contacts-multi-select.png" media="(max-width:767px)">
-              <img src="../img/plutopay/1200px/PlutoPay - TEST - contacts-multi-select.png" alt="Screen showing old version of multi-select feature">
-            </picture>
-          </div>
-        </div>
 
-        <div>
-          <div>
-            <h2>Purpose of contact groups unclear</h2>
-            <h3>Medium Priority</h3>
-            <h4>The Problem</h4>
-            <p>
-              67% of users were confused or unsure of what the purpose of the
-              Groups feature is, with nearly half of them saying it seemed
-              redundant or that they wouldn’t use such a feature.
-            </p>
-            <h4>The Solution</h4>
-            <p>
-              Revise Groups functionality; potentially replace it with
-              automatically generated “Recents” list based on who the user
-              interacted with last.
-            </p>
+          <div class="card content-highlight">
+            <div style="flex:3; margin-right:2em;">
+              <h2 class="card-title alt" style="font-size:2.25em;">
+                Purpose of contact groups unclear</h2>
+              <h3 class="card-title alt">Medium Priority</h3>
+              <h3 class="card-title">The Problem</h3>
+              <p class="p card">
+                67% of users were confused or unsure of what the purpose of the
+                Groups feature is, with nearly half of them saying it seemed
+                redundant or that they wouldn’t use such a feature.
+              </p>
+              <h3 class="card-title">The Solution</h3>
+              <p class="p card">
+                Revise Groups functionality; potentially replace it with
+                automatically generated “Recents” list based on who the user
+                interacted with last.
+              </p>
+            </div>
+            <div class="wireframe" style="flex:1.5">
+              <picture>
+                <source srcset="../img/plutopay/600px/PlutoPay - TEST - contacts-add-new.png" media="(max-width:767px)">
+                <img src="../img/plutopay/1200px/PlutoPay - TEST - contacts-add-new.png" alt="Screenshot showing groups feature">
+              </picture>
+            </div>
           </div>
-          <div>
-            <picture>
-              <source srcset="../img/plutopay/600px/PlutoPay - TEST - contacts-add-new.png" media="(max-width:767px)">
-              <img src="../img/plutopay/1200px/PlutoPay - TEST - contacts-add-new.png" alt="Screenshot showing groups feature">
-            </picture>
-          </div>
-        </div>
 
-        <div>
-          <div>
-            <h2>"Is there a way to skip onboarding?"</h2>
-            <h3>Low Priority</h3>
-            <h4>The Problem</h4>
-            <p>
-              33% of participants wanted to skip onboarding or mentioned that they
-              usually skip onboarding when using new apps. This may also be a
-              helpful feature if someone is making a new account, but has used the
-              app before, or is just in a hurry to begin using it in an
-              exploratory way.
-            </p>
-            <h4>The Solution</h4>
-            <p>
-              Add a skip button to the onboarding flow.
-            </p>
-          </div>
-          <div>
-            <picture>
-              <source srcset="../img/plutopay/600px/PlutoPay - TEST - contacts-onboarding.png" media="(max-width:767px)">
-              <img src="../img/plutopay/1200px/PlutoPay - TEST - contacts-onboarding.png" alt="Contact feature slide in onboarding">
-            </picture>
+          <div class="card content-highlight">
+            <div style="flex:3; margin-right:2em;">
+              <h2 class="card-title alt" style="font-size:2.25em;">
+                "Is there a way to skip onboarding?"</h2>
+              <h3 class="card-title alt">Low Priority</h3>
+              <h3 class="card-title">The Problem</h3>
+              <p>
+                33% of participants wanted to skip onboarding or mentioned that they
+                usually skip onboarding when using new apps. This may also be a
+                helpful feature if someone is making a new account, but has used the
+                app before, or is just in a hurry to begin using it in an
+                exploratory way.
+              </p>
+              <h3 class="card-title">The Solution</h3>
+              <p>
+                Add a skip button to the onboarding flow.
+              </p>
+            </div>
+            <div class="wireframe" style="flex:1.5">
+              <picture>
+                <source srcset="../img/plutopay/600px/PlutoPay - TEST - contacts-onboarding.png" media="(max-width:767px)">
+                <img src="../img/plutopay/1200px/PlutoPay - TEST - contacts-onboarding.png" alt="Contact feature slide in onboarding">
+              </picture>
+            </div>
           </div>
         </div>
       </div>
 
-      <div>
+      <div class="container">
         <h1>DESIGN</h1>
         <h2>High-Fidelity Mockups</h2>
         <p>
@@ -545,28 +567,28 @@
         Generally most of the feedback I was getting was positive, and mostly focused on small details. I took this as a positive sign since no one seemed to have any major points of confusion with the app functionality; there were no huge usability flaws in this design. As a result, the overall structure of the app did not change too much over the iterations of increasing fidelity. Many testers were pleased by the minimalist visuals and clean look in I used in PlutoPay's high-fidelity prototype.
         </p>
 
-        <div>
-          <picture>
+        <div class="image-grid">
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Hi-Fi Transfers.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Hi-Fi Transfers.png" alt="Mid-fidelity wireframe of the contacts page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Hi-Fi Goals.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Hi-Fi Goals.png" alt="Mid-fidelity wireframe of the goals page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Hi-Fi Home.png" media="(max-width:767px)">
               <img src="../img/plutopay/1200px/PlutoPay - Hi-Fi Home.png" alt="Mid-fidelity wireframe of the home page">
             </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Hi-Fi History.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Hi-Fi History.png" alt="Mid-fidelity wireframe of the history page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Hi-Fi Landing.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/PlutoPay - Hi-Fi Landing.png" alt="Mid-fidelity wireframe of the sign up page">
           </picture>
-          <picture>
+          <picture class="wireframe">
             <source srcset="../img/plutopay/600px/PlutoPay - Hi-Fi Contacts.png" media="(max-width:767px)">
               <img src="../img/plutopay/1200px/PlutoPay - Hi-Fi Contacts.png" alt="Mid-fidelity wireframe of the transfer page">
           </picture>
@@ -588,27 +610,29 @@
         As part of updating the high-fidelity prototype for the final version, I also make some changes to make the app more accessible to a wider range of users. A few of these changes are discussed in more detail below.
         </p>
 
-        <h3>GRAPH COLOR CODING</h3>
-        <div>
-          <p>
-            Yellow originally was used to show when a contribution is below the daily goal, but there was no other cue to indicate to users whether a day’s savings contribution was over or under the goal.
-          </p>
-          <p>
-            To avoid relying solely on color as a means of conveying that information, I added a line on the graph to show where the daily contribution goal is, so users can see which entries are above or below the goal.
-          </p>
-          <p>
-            I also darkened the font on the dollar values for each bar in the graph, and made them all the same color to improve readability and consistency.
-          </p>
-        </div>
-        <div>
-          <picture>
-            <source srcset="../img/plutopay/600px/accessibility-color-coding_600.png" media="(max-width:767px)">
-            <img src="../img/plutopay/1200px/accessibility-color-coding_1200.png" alt="UI elements used in PlutoPay">
-          </picture>
+        <div class="card content-highlight">
+          <div style="flex:3; padding-left:1em">
+            <h3>GRAPH COLOR CODING</h3>
+            <p>
+              Yellow originally was used to show when a contribution is below the daily goal, but there was no other cue to indicate to users whether a day’s savings contribution was over or under the goal.
+            </p>
+            <p>
+              To avoid relying solely on color as a means of conveying that information, I added a line on the graph to show where the daily contribution goal is, so users can see which entries are above or below the goal.
+            </p>
+            <p>
+              I also darkened the font on the dollar values for each bar in the graph, and made them all the same color to improve readability and consistency.
+            </p>
+          </div>
+          <div style="flex:2.5">
+            <picture>
+              <source srcset="../img/plutopay/600px/accessibility-color-coding_600.png" media="(max-width:767px)">
+              <img src="../img/plutopay/1200px/accessibility-color-coding_1200.png" alt="UI elements used in PlutoPay">
+            </picture>
+          </div>
         </div>
 
-        <div>
-          <div>
+        <div class="card content-highlight">
+          <div style="flex:3; padding-left:1em">
             <h3>FORMS & PLACEHOLDERS</h3>
             <p>
               Although I was already following accessibility recommendations to use clear boundaries to denote text input fields in forms, I hadn’t included placeholders, so I added them.
@@ -620,7 +644,7 @@
               These changes provide extra information to users about what they should enter in the fields, and serve as a more distinct visual delineation between what is interactive and what is not.
             </p>
           </div>
-          <div>
+          <div style="flex:2.5">
           <picture>
             <source srcset="../img/plutopay/600px/accessibility-forms.png" media="(max-width:767px)">
             <img src="../img/plutopay/1200px/accessibility-forms.png" alt="UI elements used in PlutoPay">
@@ -628,23 +652,25 @@
           </div>
         </div>
 
-      <div>
-        <div>
-          <h3>LARGE TEXT MODE</h3>
-          <p>
-            Because the body and header fonts may be too small for various user groups, I added an option to increase the font size for user comfort. This makes the app content easier to read for individuals who may have vision impairments.
-          </p>
-          <p>
-            Because I want users to have flexibility and control over their experience, in the functional app, I would recommend implementing a slider in Settings, which is used to increase the font size. This is instead of a simple toggle between large and small. This customizability ensures each user’s viewing experience is optimized to them.
-          </p>
-        </div>
-        <div>
-          <picture>
-            <source srcset="../img/plutopay/600px/accessibility-large-text.png" media="(max-width:767px)">
-            <img src="../img/plutopay/1200px/accessibility-large-text.png" alt="UI elements used in PlutoPay">
-          </picture>
+        <div class="card content-highlight">
+          <div style="flex:3; padding-left:1em">
+            <h3>LARGE TEXT MODE</h3>
+            <p>
+              Because the body and header fonts may be too small for various user groups, I added an option to increase the font size for user comfort. This makes the app content easier to read for individuals who may have vision impairments.
+            </p>
+            <p>
+              Because I want users to have flexibility and control over their experience, in the functional app, I would recommend implementing a slider in Settings, which is used to increase the font size. This is instead of a simple toggle between large and small. This customizability ensures each user’s viewing experience is optimized to them.
+            </p>
+          </div>
+          <div style="flex:2.5">
+            <picture>
+              <source srcset="../img/plutopay/600px/accessibility-large-text.png" media="(max-width:767px)">
+              <img src="../img/plutopay/1200px/accessibility-large-text.png" alt="UI elements used in PlutoPay">
+            </picture>
+          </div>
         </div>
       </div>
+
       <div class="colored">
         <div class="container">
           <h1>FINALIZE</h1>
@@ -712,7 +738,7 @@
           </div>
           <div class="social-media"> <!-- Social Media -->
             <a href="https://www.linkedin.com/in/hibamurali/" target="_blank">
-              <img src="img/linkedin.svg" class="social" width="32px" height="32px">
+              <img src="../img/linkedin.svg" class="social" width="32px" height="32px">
             </a>
           </div>
           <p>Copyright Hiba Murali 2021. All rights reserved.</p>
