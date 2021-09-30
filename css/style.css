@@ -9,31 +9,107 @@
     Dark_Tangerine: d14949
     Yellow: f7c203
 */
-body: {
+body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  color: #13061a;
 }
 
-h1: {
-
+/* SECTIONS */
+div {
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.colored {
+  background-color: #fcf6ff;
 }
 
-h2: {
-
+footer {
+  background-color: #f7c203;
 }
 
-h3: {
-
+/* TYPOGRAPHY */
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: normal;
+  color: #4d1766;
 }
 
-h4: {
-
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: normal;
+  color: #8729b3;
 }
 
-p: {
-
+h3 {
+  font-size: 1.15em;
+  font-weight: 400;
+  line-height: normal;
+  color: #d14949;
+  padding: 1.5em;
+  background-color: #fff4f4;
+  border-left: solid;
+  border-color: #d14949;
+  border-width: thick;
 }
 
-img: {
+h4 {
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: normal;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* IMAGES */
+img {
   width: 100%;
+}
+
+
+/* LINKS */
+a {
+  color: #ff5757;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #d14949;
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
 }
