@@ -49,10 +49,10 @@ div {
 }
 .cards_wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -1em;
   margin-right: -1em;
 }
-
 
 #aboutme {
   flex: 1;
@@ -90,6 +90,8 @@ nav {
   justify-content: space-between;
   padding-top: 1em;
   padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 /* ------------ Footer -------------*/
@@ -106,6 +108,8 @@ footer {
   margin-left: 1em;
   margin-right: 1em;
   background-color: #ffffff;
+  max-width: 430px;
+  flex: 1;
 }
 .card.content-highlight {
   display: flex;
