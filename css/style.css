@@ -245,6 +245,15 @@ a:focus {
   text-decoration: none;
 }
 
+.navicon {
+  display: flex;
+  margin-left: 0.75rem;
+}
+
+.navtoggle a:last-child {
+  display: none;
+}
+
 .button { /*  box-shadow: 2px solid #ff7f50;*/
   background-color: #ff5757;
   color: #ffffff;
@@ -330,6 +339,12 @@ For screens 600px and smaller:
     margin-top: 3em;
     min-width: 277px;
     margin-left: 0;
+  }
+  .navtoggle a:not(:last-child) {
+    display: none;
+  }
+  .navtoggle a:last-child {
+    display: flex;
   }
 }
 
