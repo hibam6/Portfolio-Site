@@ -17,6 +17,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  line-height: 1.5;
   color: #13061a;
 }
 
@@ -199,7 +200,7 @@ h4 {
 p {
   font-size: 1em;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.5;
 }
 .p.card {
   font-family: Nunito, sans-serif;
