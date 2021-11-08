@@ -30,8 +30,8 @@ div {
   max-width: 940px;
   padding-top: 3em;
   padding-bottom: 3em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .colored {
   background-color: #fcf6ff;
@@ -77,10 +77,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 1em;
+  padding-top: 2em;
   padding-bottom: 1em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  align-items: center;
 }
 
 /* ------------ Footer -------------*/
@@ -246,13 +247,13 @@ a:focus {
 }
 
 .navicon {
-  display: flex;
-  margin-left: 0.75rem;
-}
-
-.navtoggle a:last-child {
   display: none;
 }
+
+.navcontent#navbarLinks {
+  display: flex;
+}
+
 
 .button { /*  box-shadow: 2px solid #ff7f50;*/
   background-color: #ff5757;
@@ -340,11 +341,18 @@ For screens 600px and smaller:
     min-width: 277px;
     margin-left: 0;
   }
-  .navtoggle a:not(:last-child) {
-    display: none;
-  }
-  .navtoggle a:last-child {
+
+  .navicon {
     display: flex;
+    margin-left: 0.75rem;
+  }
+  #hamburger {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .navcontent#navbarLinks {
+    display: none;
   }
 }
 
