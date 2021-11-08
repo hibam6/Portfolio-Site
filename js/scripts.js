@@ -8,6 +8,6 @@ function menuToggle() {
     hamburger.style.display = "flex";
   } else {
     navObject.style.display = "flex";
-    hamburger.style.display = "none"; 
+    hamburger.style.display = "none";
   }
 }

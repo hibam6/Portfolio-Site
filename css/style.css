@@ -55,6 +55,25 @@ div {
   margin-right: -1em;
   justify-content: center;
 }
+.figma_embed_div {
+  padding-bottom: 56.25%;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+iframe.figma_embed_iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 500px;
+}
+.loom_embed_iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 #aboutme {
   flex: 1;
