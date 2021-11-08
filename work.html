@@ -24,11 +24,11 @@
             <a href="about.html" class="navlink">About</a>
             <a href="#contact" class="button navbar" onclick="menuToggle()">Contact</a>
             <a href="javascript:void(0);" class="navicon" onclick="menuToggle()">
-              <img src="img/x.svg"/>
+              <img src="img/x.svg" alt="close"/>
             </a>
           </nav>
           <a href="javascript:void(0);" class="navicon" id="hamburger" onclick="menuToggle()">
-            <img src="img/menu.svg"/>
+            <img src="img/menu.svg" alt="menu"/>
           </a>
         </div>
       </div>
@@ -77,22 +77,25 @@
     </main>  <!-- End Page Content -->
 
     <footer id="contact">
-        <div class="container">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 3rem;">
           <h2 class="h2-footer">Interested in collaborating?</h2>
-          <p>Reach out to me any time!</p>
           <div class="CTA">
             <a href="https://www.hibamurali.com/contact"
                class="button contact">
                Contact Me
             </a>
           </div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <p>Copyright Hiba Murali 2021. All rights reserved.</p>
           <div class="social-media"> <!-- Social Media -->
             <a href="https://www.linkedin.com/in/hibamurali/" target="_blank">
-              <img src="img/linkedin.svg" class="social" width="32" height="32">
+              <img src="img/linkedin.svg" class="social" width="32" height="32" alt="linkedin">
             </a>
           </div>
-          <p>Copyright Hiba Murali 2021. All rights reserved.</p>
         </div>
+      </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>

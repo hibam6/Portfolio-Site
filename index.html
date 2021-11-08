@@ -24,11 +24,11 @@
             <a href="about.html" class="navlink">About</a>
             <a href="#contact" class="button navbar" onclick="menuToggle()">Contact</a>
             <a href="javascript:void(0);" class="navicon" onclick="menuToggle()">
-              <img src="img/x.svg"/>
+              <img src="img/x.svg" alt="close"/>
             </a>
           </nav>
           <a href="javascript:void(0);" class="navicon" id="hamburger" onclick="menuToggle()">
-            <img src="img/menu.svg"/>
+            <img src="img/menu.svg" alt="menu"/>
           </a>
         </div>
       </div>
@@ -79,7 +79,7 @@
                 </div>
               </div>
             </div> <!-- End SG case study -->
-            <div class="card case-study"> <!-- Jumpsuit -->
+<!--            <div class="card case-study"> <!- Jumpsuit
               <picture>
                 <source srcset="img/placeholder_600.png" media="(max-width:767px)">
                 <img src="img/placeholder_1200.png" alt="Placeholder.">
@@ -91,8 +91,8 @@
                   <a href="#" class="button">Learn more</a>
                 </div>
               </div>
-            </div> <!-- End SG case study -->
-            <div class="card case-study"> <!-- Bounce -->
+            </div> <!- End SG case study -->
+<!--            <div class="card case-study"> <!- Bounce
               <svg class="animated" viewbox="0 -35 250 125" fill="none"  xmlns="http://www.w3.org/2000/svg">
                 <g id="h" filter="url(#filter0_d_249:4370)">
                   <path d="M41.6847 27.1721C47.9632 27.1721 52.6353 29.1066 55.7015 32.976C58.7677 36.7721 60.3008 42.5759 60.3008 50.3875V74.0409C60.3008 76.8152 59.4247 79.0053 57.6726 80.6113C55.9205 82.2173 53.548 83.0204 50.5547 83.0204C47.5614 83.0204 45.1889 82.2173 43.4368 80.6113C41.6847 79.0053 40.8086 76.8152 40.8086 74.0409V49.9495C40.8086 44.6932 38.5456 42.065 34.0192 42.065C31.0991 42.065 28.7629 43.0139 27.0108 44.9122C25.3317 46.7372 24.4922 49.2195 24.4922 52.3586V74.0409C24.4922 76.8152 23.6161 79.0053 21.864 80.6113C20.1119 82.2173 17.7393 83.0204 14.7461 83.0204C11.7529 83.0204 9.38026 82.2173 7.62816 80.6113C5.87605 79.0053 5 76.8152 5 74.0409V13.3743C5 10.819 5.91257 8.7384 7.73766 7.13242C9.56276 5.45321 11.9719 4.61377 14.9651 4.61377C17.8123 4.61377 20.1119 5.38031 21.864 6.91341C23.6161 8.4465 24.4922 10.4905 24.4922 13.0458V34.9471C26.4633 32.3918 28.9089 30.4573 31.8291 29.1432C34.7492 27.8292 38.0344 27.1721 41.6847 27.1721Z" fill="#8729B3"/>
@@ -156,29 +156,32 @@
                   <a href="#" class="button">Learn more</a>
                 </div>
               </div>
-            </div> <!-- End Bounce -->
+            </div> <!- End Bounce -->
           </div>
         </div>
       </div>
     </main>  <!-- End Page Content -->
 
     <footer id="contact">
-        <div class="container">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; padding-bottom: 3rem;">
           <h2 class="h2-footer">Interested in collaborating?</h2>
-          <p>Reach out to me any time!</p>
           <div class="CTA">
             <a href="https://www.hibamurali.com/contact"
                class="button contact">
                Contact Me
             </a>
           </div>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <p>Copyright Hiba Murali 2021. All rights reserved.</p>
           <div class="social-media"> <!-- Social Media -->
             <a href="https://www.linkedin.com/in/hibamurali/" target="_blank">
-              <img src="img/linkedin.svg" class="social" width="32" height="32">
+              <img src="img/linkedin.svg" class="social" width="32" height="32" alt="linkedin">
             </a>
           </div>
-          <p>Copyright Hiba Murali 2021. All rights reserved.</p>
         </div>
+      </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
