@@ -19,11 +19,17 @@
           <a href="index.html">
             <img src="img/logo-purple.svg" class="logo" alt="Hiba">
           </a>
-          <nav>
+          <nav class="navcontent" id="navbarLinks">
             <a href="work.html" class="navlink">Work</a>
             <a href="about.html" class="navlink">About</a>
-            <a href="#contact" class="button navbar">Contact</a>
+            <a href="#contact" class="button navbar" onclick="menuToggle()">Contact</a>
+            <a href="javascript:void(0);" class="navicon" onclick="menuToggle()">
+              <img src="img/x.svg"/>
+            </a>
           </nav>
+          <a href="javascript:void(0);" class="navicon" id="hamburger" onclick="menuToggle()">
+            <img src="img/menu.svg"/>
+          </a>
         </div>
       </div>
     </header>
